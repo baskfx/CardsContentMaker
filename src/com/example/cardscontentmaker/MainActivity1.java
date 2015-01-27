@@ -37,7 +37,9 @@ public class MainActivity1 extends Activity {
 	{
 	    Random rnd = new Random(); 
 
-		int Wfixed = 240;
+        float dpToPx = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 190, getResources().getDisplayMetrics());
+        
+		int Wfixed = getResources().getDisplayMetrics().widthPixels;
         double sumA = 0;
         for (int i = from; i < to; i++)
         {
